@@ -21,5 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "XeroShimmer"
 include(":app")
-include(":app:XeroShimmerLib")
 include(":XeroShimmerLib")
