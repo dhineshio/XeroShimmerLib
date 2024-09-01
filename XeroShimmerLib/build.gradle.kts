@@ -30,6 +30,17 @@ android {
   }
 }
 
+publishing {
+  publications {
+	register<MavenPublication>("release") {
+	  afterEvaluate {
+		from(components["release"])
+	  }
+	}
+  }
+}
+
+
 dependencies {
 
   implementation(libs.androidx.core.ktx)
